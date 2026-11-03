@@ -5,7 +5,81 @@
   margin: 0;
   padding: 0;
 }
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
 
-html {
-	min-width: 320px;
-	scroll-behavior: smooth;}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.button-group {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 7.5rem;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.animal-card-grid {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 7.5rem;
+  width: 100%;
+  align-items: center;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.animal-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  width: 250px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.animal-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 265px;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.animal-card.hidden,
+.animal-card.is-hidden,
+.animal-card[hidden] {
+  display: block;
+  visibility: hidden;
+}
+
+.btn_hide {
+  border: 1px solid #000;
+  margin-top: 1rem;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  background-color: #5ca1eb;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn_reveal {
+  border: 3px solid #000;
+  border-radius: 4px;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
